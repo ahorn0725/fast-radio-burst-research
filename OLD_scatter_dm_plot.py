@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
 # =============================== CONFIG ===============================
-CSV_PATH = "frb data and graphs (nexus 2026, chatterjee & cordes) - graph_tau_dm.csv"          # path to your file
+CSV_PATH = "graph_tau_dm (1).csv"          # path to your file
 
 # This sheet has a SINGLE header row (frb_name, tau_scatt, ...), so header=0
 # keeps row 0 as the column names and we skip nothing. If you ever export a

@@ -62,7 +62,7 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
 # =============================== CONFIG ===============================
-CSV_PATH = "frb data and graphs (nexus 2026, chatterjee & cordes) - graph_tau_dm.csv"
+CSV_PATH = "dm_tau_graph_final.csv"
 
 # This sheet has a SINGLE header row (frb_name, tau_scatt, ...), so header=0
 # keeps row 0 as the column names and we skip nothing. If you ever export a
@@ -498,6 +498,8 @@ def main():
         ax.set_ylabel(r"Scattering time  $\tau$  (ms)")
     ax.set_title(TITLE)
     ax.grid(True, which="both", ls=":", alpha=0.4)
+    ax.text(120, 11, r"FRB20191228A",
+            ha="left", va="center", fontsize=9)
 
     fig.tight_layout()
     fig.savefig(OUT_PNG, dpi=DPI, bbox_inches="tight")

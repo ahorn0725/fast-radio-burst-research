@@ -30,7 +30,7 @@ matplotlib.rcParams.update(params)
 #from matplotlib import gridspec
 
 # Load in arrays
-data = pd.read_csv('dm_z_graphing.tsv', sep="\t")
+data = pd.read_csv('dmz3.tsv', sep="\t")
 z = data['z']
 dmg = data['dm_ne2025_2dec']
 dmh    = 52.5  # Was 50 +- 25
@@ -116,10 +116,10 @@ ax.yaxis.set_ticks_position('both')
 ax.tick_params(labelright=True)
 
 # Add a line to draw attention to FRB20190520 DONE
-plt.text(1200,0.255, 'FRB20190520B', horizontalalignment='center', color=cxsdm)
+plt.text(1150,0.1955, 'FRB20190520B', horizontalalignment='center', color=cxsdm)
 
-# Add a label for FRB20121102 DONEISH?
-plt.text(275,0.17, 'FRB20121102', va='center_baseline', ha='left', color=cxsdm)
+# # Add a label for FRB20121102 DONEISH?
+# plt.text(275,0.17, 'FRB20121102', va='center_baseline', ha='left', color=cxsdm)
 
 # Add a label for FRB20220610A DONE
 plt.text(1480,1.05, 'FRB20220610A', va='center_baseline', ha='right', color=cxsdm)

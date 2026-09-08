@@ -50,7 +50,7 @@ import pandas as pd
 # ----------------------------------------------------------------------
 # CONFIG
 # ----------------------------------------------------------------------
-INPUT_CSV = "DM_Z_GRAPHING_FRBS (1).csv"
+INPUT_CSV = "FRBs_position_corrected (1).csv"
 OUTPUT_CSV = None  # None -> "<input>_filled.csv"
 OVERWRITE_INPUT = False  # True writes back to the input CSV. Use with care.
 
